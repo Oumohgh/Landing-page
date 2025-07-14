@@ -1,4 +1,4 @@
-
+/* zed  * */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,6 @@ body {
   background-color: #fff;
 }
 
-
 a {
   color: #1a73e8;
   text-decoration: none;
@@ -23,7 +22,7 @@ a:hover {
   text-decoration: underline;
 }
 
-
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -64,46 +63,63 @@ header nav ul li button {
 }
 
 header nav ul li button:hover {
-  background-color: #1669c1;
+  background-color: #c16c16;
 }
 
-
+/* Homen */
 #home {
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: #f1f3f4;
+  color: #fff;
   border-radius: 12px;
+  overflow: hidden;
   margin: 2rem auto;
-  max-width: 900px;
+  max-width: 1000px;
+}
+
+#home img.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5); 
 }
 
 #home h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
 #home p {
   font-size: 1.2rem;
-  color: #555;
   margin-bottom: 1.5rem;
+  max-width: 600px;
 }
 
 #home button {
-  background-color: #1a73e8;
+  background-color: #e6eef9;
   color: #fff;
   border: none;
-  padding: 0.7rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 #home button:hover {
-  background-color: #1669c1;
+  background-color: #B2C4E5;
 }
 
-/* About Section */
+/* section dial about */
 #about {
   max-width: 900px;
   margin: 3rem auto;
@@ -120,7 +136,7 @@ header nav ul li button:hover {
   line-height: 1.8;
 }
 
-/* Services Section */
+/* Section dial services*/
 #services {
   max-width: 1000px;
   margin: 3rem auto;
@@ -167,10 +183,10 @@ header nav ul li button:hover {
   height: auto;
 }
 
-/* Footer */
+/* section dial foot */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-top: 1px solid #ddd;
   background-color: #f8f9fa;
   margin-top: 2rem;
@@ -180,10 +196,22 @@ footer nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 1rem;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Responsive 3la small screeen */
   margin-bottom: 1rem;
 }
+
+footer nav ul li a {
+  color: #333;
+  font-weight: 500;
+}
+
+footer nav ul li a:hover {
+  color: #1a73e8;
+}
+
 footer p {
   font-size: 0.9rem;
   color: #777;
+  margin-top: 1rem;
 }
